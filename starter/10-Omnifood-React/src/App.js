@@ -1,7 +1,7 @@
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Header from "./components/Header/Header";
-import Grid from "./components/HowItWorks/HowItWorks";
+import HowItWorks from "./components/HowItWorks/HowItWorks";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Grid />
+        <HowItWorks />
       </main>
     </>
   );
