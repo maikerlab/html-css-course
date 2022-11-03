@@ -5,6 +5,7 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Featured from "./components/Featured/Featured";
 import Meals from "./components/Meals/Meals";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Pricing from "./components/Pricing/Pricing";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Featured />
         <Meals />
         <Testimonials />
+        <Pricing />
       </main>
     </>
   );
