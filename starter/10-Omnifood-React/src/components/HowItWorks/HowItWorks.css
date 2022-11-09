@@ -51,3 +51,10 @@
 .step-img {
   width: 35%;
 }
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  .step-number {
+    font-size: 7.4rem;
+  }
+}

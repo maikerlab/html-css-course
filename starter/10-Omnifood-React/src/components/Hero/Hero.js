@@ -15,7 +15,7 @@ export default function Hero() {
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" className="btn btn--full mr-sm">
+            <a href="#cta" className="btn btn--full mr-sm">
               Start eating well
             </a>
             <a href="#" className="btn btn--outline">
