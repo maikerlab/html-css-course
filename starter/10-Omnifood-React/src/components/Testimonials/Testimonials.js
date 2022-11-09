@@ -1,10 +1,12 @@
 import "./Testimonials.css";
-
 import React from "react";
 
 export default function Testimonials() {
   return (
-    <section className="section-testimonials grid grid--2-cols">
+    <section
+      className="section-testimonials grid grid--2-cols"
+      id="testimonials"
+    >
       <div className="testimonials-container">
         <span className="subheading">Testimonials</span>
         <h2 className="heading-secondary">What our customers say</h2>

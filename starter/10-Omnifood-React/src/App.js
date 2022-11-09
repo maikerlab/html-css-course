@@ -7,6 +7,7 @@ import Meals from "./components/Meals/Meals";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Pricing from "./components/Pricing/Pricing";
 import CallToAction from "./components/CallToAction/CallToAction";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Testimonials />
         <Pricing />
         <CallToAction />
+        <Footer />
       </main>
     </>
   );

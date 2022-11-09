@@ -29,6 +29,8 @@ Paragraph default: 1.6
 
 - Accents:
 - Greys:
+#888
+#767676 (lightest gray allowed on white)
 #6f6f6f (lightest gray allowed on #f2f2e9)
 #555
 #333
@@ -221,6 +223,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -249,4 +255,37 @@ strong {
   /* outline: 4px dotted #e67e22;
   outline-offset: 4px; */
   box-shadow: 0 0 0 0.8rem #e67d2287;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/* Landscape Tablets */
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px */
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  html {
+    /* 8px/16px = 0.5 = 50% */
+    font-size: 50%;
+  }
 }

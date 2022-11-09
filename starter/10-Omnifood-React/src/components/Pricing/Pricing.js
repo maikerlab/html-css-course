@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Pricing() {
   return (
-    <section className="section-pricing">
+    <section className="section-pricing" id="pricing">
       <div className="container center-text">
         <span className="subheading">Pricing</span>
         <h2 className="heading-secondary">
