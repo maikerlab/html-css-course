@@ -2,6 +2,12 @@ import React from "react";
 import "./Header.css";
 
 export default function Header() {
+  function toggleMobileNav() {
+    const headerEl = document.querySelector(".header");
+    console.log("menu was clicked");
+    headerEl.classList.toggle("nav-open");
+  }
+
   return (
     <header className="header">
       <a href="#" className="header-logo">
@@ -36,7 +42,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <button className="btn-mobile-nav">
+      <button className="btn-mobile-nav" onClick={toggleMobileNav}>
         <ion-icon name="menu-outline"></ion-icon>
         <ion-icon name="close-outline"></ion-icon>
       </button>
