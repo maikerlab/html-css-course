@@ -99,3 +99,10 @@
   font-size: 1.8rem;
   line-height: 1.8rem;
 }
+
+/* BELOW 744px (Smaller tablets) */
+@media (max-width: 44em) {
+  .pricing-plan {
+    width: 100%;
+  }
+}

@@ -56,6 +56,7 @@ Medium: 11px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -63,6 +64,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing positioned relative to body */
+  overflow-x: hidden;
 }
 
 /* GENERAL REUSABLE ELEMENTS */
@@ -290,5 +294,33 @@ strong {
   }
   .btn--form {
     margin-top: 1.2rem;
+  }
+}
+
+/* BELOW 744px (Smaller tablets) */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+}
+
+/* BELOW 544px (Phones) */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.2rem;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 .hero {
-  width: 130rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
@@ -86,5 +86,18 @@
   .delivered-meals {
     justify-content: center;
     margin-top: 3.2rem;
+  }
+}
+
+/* BELOW 544px (Phones) */
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 80%;
   }
 }
