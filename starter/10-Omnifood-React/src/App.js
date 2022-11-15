@@ -31,11 +31,30 @@ function App() {
         }
 
         if (link.classList.contains("header")) {
-          console.log("toggle nav-open");
           link.classList.toggle("nav-open");
         }
       });
     });
+
+    // Sticky Navigation
+    const sectionHeroEl = document.querySelector(".section-hero");
+    const obs = new IntersectionObserver(
+      function (entries) {
+        const ent = entries[0];
+        if (!ent.isIntersecting) {
+          document.body.classList.add("sticky");
+        } else {
+          document.body.classList.remove("sticky");
+        }
+      },
+      {
+        // In the viewport
+        root: null,
+        threshold: 0, // event will be fired as soon as 0% of hero-section is inside viewport
+        rootMargin: "-80px",
+      }
+    );
+    obs.observe(sectionHeroEl);
   });
 
   return (

@@ -8,7 +8,7 @@ export default function Header() {
   }
 
   return (
-    <header className="header">
+    <header className="header sticky">
       <a href="#" className="header-logo">
         <img src="img/omnifood-logo.png" alt="Omnifood Logo" className="logo" />
       </a>
