@@ -4,7 +4,6 @@ import "./Header.css";
 export default function Header() {
   function toggleMobileNav() {
     const headerEl = document.querySelector(".header");
-    console.log("menu was clicked");
     headerEl.classList.toggle("nav-open");
   }
 

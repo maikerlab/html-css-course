@@ -18,7 +18,7 @@ export default function Hero() {
             <a href="#cta" className="btn btn--full mr-sm">
               Start eating well
             </a>
-            <a href="#" className="btn btn--outline">
+            <a href="#how" className="btn btn--outline">
               Learn more &darr;
             </a>
             <div className="delivered-meals">
